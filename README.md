@@ -1,1 +1,1 @@
-# SCNet
+# SCMNet
