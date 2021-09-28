@@ -23,6 +23,7 @@ For performance comparison, we trained few off-line and real-time existing model
 
 ## Results
 We trained our model with different input resolutions for different dataset. Cityscapes provides 1024 * 2048 px resolution images. We mainly focus full resolution of cityscapes images. For CamVid dataset, we use 640 * 896 px resolution altough original image size is 720 * 960 px. Similarly, we use 768 * 1280 px resolution input images for BDD100K dataset although original size of input image is 720 * 1280 px. For Cityscapes and BDD100K datasets, we use 19 classes, however for Camvid dataset we trained the model with 11 classes (suggested by the literature). 
+
 ### Complete pipeline of SCMNet
 ![pipeline](https://github.com/tanmaysingha/SCMNet/blob/main/figures/SCMNet_pipeline.png?raw=true)
   
