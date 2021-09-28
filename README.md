@@ -78,11 +78,11 @@ vehicle       | 0.904  | 0.802
 <b>Score Average | <b>0.842  | <b>0.668
 
  <b><u>Validation mIoU on BDD100K dataset</b></u>
- Input size    |  Parameters (million)   |  mIoU
+ Input size    |  Parameters (million)   |  mIoU (%)
  --------------|-------------------------|-------
  768*1280      |         1.2             |   51.2
  
  <b><u>Validation and test mIoU on CamVid dataset</b></u>
- Input size    |  Validation mIoU   |  Test mIoU
- --------------|--------------------|-------
- 640*896       |         78.6       |   71.3
+ Input size    |  Validation mIoU (%)   |  Test mIoU (%)
+ --------------|------------------------|-------
+ 640*896       |         78.6           |   71.3
