@@ -137,7 +137,7 @@ def model(num_classes=19, input_size=(1024, 2048, 3), shrink_factor=2):
     deep_branch4 = bottleneck_block(Deep_shallow_Add2, 128, (3, 3), t = 6, strides = 2, dilation_rate=(1, 1), n = 3)
     deep_branch4 = bottleneck_block(deep_branch4, 160, (3, 3), t = 6, strides = 1, dilation_rate=(1, 1), n = 1) 
 
-    shallow_branch4 = conv_block(Deep_shallow_Add2, 'ds', 160, (3, 3), strides = (2, 2), dilation_rate=(2, 2))  
+    shallow_branch4 = conv_block(Deep_shallow_Add2, 'ds', 160, (3, 3), strides = (2, 2), dilation_rate=(1, 1))  
 
     Deep_shallow_Add3 = tf.keras.layers.add([shallow_branch4, deep_branch4])
     Deep_shallow_Add3 = tf.keras.activations.relu(Deep_shallow_Add3)
