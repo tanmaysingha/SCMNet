@@ -262,6 +262,6 @@ def model(num_classes=19, input_size=(1024, 2048, 3), shrink_factor=2):
     output = tf.keras.layers.Conv2D(filters=num_classes, kernel_size=(1,1), strides=(1,1), activation='softmax', name='conv_output')(output)
 
     ## MAKING MODEL
-    contextnet = tf.keras.Model(inputs=[shallow_input, deep_input], outputs=output)
+    SCMNet = tf.keras.Model(inputs=[shallow_input, deep_input], outputs=output)
 
-    return contextnet
+    return SCMNet
