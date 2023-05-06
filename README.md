@@ -1,5 +1,7 @@
 # SCMNet: Shared Context Mining Network for Real-time Semantic Segmentation
-This is an official site for SCMNet model. Relying on the dual-branch encoder design, this model proposed a shared-branch encoder network in which deep and shallow branches share their knowledge while propagating contextual details to the next layers. We also introduce a new module, called "Context mining Module" (CMM) which refines the contextual deatils after every shared point. Our proposed Deep Shallow Feature Fusion Module (DS-FFM) provides better object localization and context assimilation while generating segmented output. Model performance is evaluated on three publicly available benchmarks- Cityscapes, BDD100K and CamVid datasets. SCMNet can handle high resolution input images with less memory footprint. To compare our model performance with other existing semantice segmentation models, we also trained Deeplab, FAST-SCNN, ContextNet models under the same system configuration. Due to the large size of the network, we replace standard convolution layers by depth-wise separable convolution layers in DeepLab. We can either use Xception (X-65) or MobileNetV2 DCNN as backbone in DeepLab model. In our paper, we presented the results of all these models. Our proposed model SCMNet produces better results than many existing realtime semantic segmentation models which has less than 5 million parameters. We achieve 66.5% validation accuracy on Cityscapes dataset and 51.2% validation accuracy on BDD100K dataset whilst having only 1.2 Million parameters. The proposed model produces the state-of-the-art result on Camvid validation and test sets while having less parameters. It produces 78.6% and 71.3% validation and test accuracy respectively. In this repository, we uploaded the design of the porposed model and the existing models which are trained under the same system configuration. 
+This is an official site for SCMNet model. Relying on the dual-branch encoder design, this model proposed a shared-branch encoder network in which deep and shallow branches share their knowledge while propagating contextual details to the next layers. We also introduce a new module, called "Context mining Module" (CMM) which refines the contextual deatils after every shared point. Our proposed Deep Shallow Feature Fusion Module (DS-FFM) provides better object localization and context assimilation while generating segmented output. Model performance is evaluated on three publicly available benchmarks- Cityscapes, BDD100K and CamVid datasets. SCMNet can handle high resolution input images with less memory footprint. To compare our model performance with other existing semantice segmentation models, we also trained Deeplab, FAST-SCNN, ContextNet models under the same system configuration. Due to the large size of the network, we replace standard convolution layers by depth-wise separable convolution layers in DeepLab. We can either use Xception (X-65) or MobileNetV2 DCNN as backbone in DeepLab model. In our paper, we presented the results of all these models. Our proposed model SCMNet produces better results than many existing realtime semantic segmentation models which has less than 5 million parameters. We achieve 66.5% validation accuracy on Cityscapes dataset and 51.2% validation accuracy on BDD100K dataset whilst having only 1.2 Million parameters. The proposed model produces the state-of-the-art result on Camvid validation and test sets while having less parameters. It produces 78.6% and 71.3% validation and test accuracy respectively. In this repository, we uploaded the design of the porposed model and the existing models which are trained under the same system configuration.
+
+To refer this research work, please follow this link: https://ieeexplore.ieee.org/abstract/document/9647401
 
 ## Datasets
 For this research work, we have used Cityscapes, BDD100K and CamVid datasets.
@@ -87,3 +89,19 @@ vehicle       | 0.904  | 0.802
  Input size    |  Validation mIoU (%)   |  Test mIoU (%)
  --------------|------------------------|-------
  640*896       |         78.6           |   71.3
+ 
+ ### Citation
+ ```yaml
+cff-version: 1.2.0
+If this research work is useful for your research work, then please consider for citing the paper:
+@INPROCEEDINGS{9647401,
+  author={Singha, Tanmay and Bergemann, Moritz and Pham, Duc-Son and Krishna, Aneesh},
+  booktitle={2021 Digital Image Computing: Techniques and Applications (DICTA)}, 
+  title={SCMNet: Shared Context Mining Network for Real-time Semantic Segmentation}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={1-8},
+  doi={10.1109/DICTA52665.2021.9647401}}
+
+```
